@@ -1,7 +1,7 @@
 # 🎓 Sistema de Faltas
 
 <p align="center">
-  Sistema acadêmico para controle de frequência, desenvolvido como projeto do curso de Análise e Desenvolvimento de Sistemas.
+  Sistema acadêmico para controle e acompanhamento de frequência, desenvolvido como projeto do curso de Análise e Desenvolvimento de Sistemas.
 </p>
 
 <p align="center">
@@ -13,13 +13,15 @@
 
 ## 📖 Sobre o projeto
 
-O **Sistema de Faltas** está sendo desenvolvido com o objetivo de facilitar o controle de frequência dos alunos.
+O **Sistema de Faltas** está sendo desenvolvido com o objetivo de facilitar o controle e o acompanhamento da frequência dos alunos.
 
 A plataforma terá dois tipos principais de usuários: **professores e alunos**.
 
-Os professores poderão acessar suas disciplinas, visualizar as turmas e realizar chamadas.
+Os professores poderão acessar suas disciplinas, visualizar suas turmas e realizar chamadas, registrando a presença ou falta dos alunos.
 
-Os alunos poderão acompanhar suas disciplinas, quantidade de faltas, limite permitido e sua situação de frequência.
+Os alunos poderão acompanhar suas disciplinas, consultar a quantidade de faltas, verificar o limite permitido e acompanhar sua situação durante o semestre.
+
+Além disso, o sistema terá um recurso de **notificações**, que alertará o aluno quando ele estiver próximo de atingir o limite de faltas de uma disciplina.
 
 ---
 
@@ -30,7 +32,7 @@ O painel do professor permitirá:
 - 🔐 Acessar o sistema através de login
 - 📚 Visualizar suas disciplinas
 - 👥 Visualizar os alunos das turmas
-- ✅ Registrar presença
+- ✅ Registrar presenças
 - ❌ Registrar faltas
 - 📋 Realizar e salvar chamadas
 - 📊 Consultar a frequência dos alunos
@@ -46,6 +48,7 @@ O aluno poderá:
 - 📚 Visualizar suas disciplinas
 - 📊 Consultar suas faltas
 - ⚠️ Visualizar o limite de faltas
+- 🔔 Receber alertas ao se aproximar do limite de faltas
 - ✅ Acompanhar sua situação em cada disciplina
 
 ---
@@ -58,9 +61,9 @@ O aluno poderá:
 | CSS | Estilização da interface |
 | JavaScript | Interatividade do front-end |
 | Java | Back-end e regras de negócio |
-| MySQL | Banco de dados |
+| MySQL | Armazenamento e gerenciamento dos dados |
 
-### Tecnologias utilizadas
+### Tecnologias utilizadas no projeto
 
 <p>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -74,7 +77,7 @@ O aluno poderá:
 
 ## 🗄️ Banco de dados
 
-O **MySQL** será responsável pelo armazenamento das informações do sistema, incluindo:
+O **MySQL** será utilizado para armazenar e organizar as informações necessárias para o funcionamento do sistema, incluindo:
 
 - Alunos
 - Professores
@@ -84,12 +87,25 @@ O **MySQL** será responsável pelo armazenamento das informações do sistema, 
 - Turmas
 - Presenças
 - Faltas
+- Notificações
+
+Essas informações serão utilizadas pelo back-end em Java para realizar as regras de negócio do sistema.
+
+---
+
+## 🔔 Sistema de alertas
+
+Uma das funcionalidades do projeto será o acompanhamento preventivo das faltas.
+
+O sistema deverá verificar a quantidade de faltas registradas em cada disciplina e comparar esse valor com o limite permitido.
+
+Quando o aluno estiver próximo de atingir esse limite, o sistema deverá gerar uma **notificação de alerta**, permitindo que ele acompanhe sua situação antes de atingir uma quantidade crítica de faltas.
 
 ---
 
 ## 🖥️ Telas do sistema
 
-O projeto será composto pelas seguintes telas:
+O projeto será composto inicialmente pelas seguintes telas:
 
 - 🔐 Login
 - 📝 Cadastro
@@ -97,6 +113,7 @@ O projeto será composto pelas seguintes telas:
 - ✅ Realização de chamada
 - 🎓 Painel do aluno
 - 📊 Consulta de faltas
+- 🔔 Alertas de frequência
 
 ---
 
@@ -114,15 +131,15 @@ Sistema-de-Faltas/
 └── README.md
 ```
 
-Essa estrutura será atualizada conforme novas partes do sistema forem desenvolvidas.
+A estrutura será atualizada conforme novas páginas e funcionalidades forem desenvolvidas.
 
 ---
 
 ## 🚧 Status do projeto
 
-O projeto está **em desenvolvimento**.
+O projeto está atualmente **em desenvolvimento**.
 
-### Atualmente
+### Progresso
 
 - [x] Estrutura inicial do projeto
 - [x] Tela de login
@@ -131,10 +148,12 @@ O projeto está **em desenvolvimento**.
 - [ ] Tela de cadastro
 - [ ] Tela de chamada
 - [ ] Painel do aluno
+- [ ] Sistema de notificações
 - [ ] JavaScript
 - [ ] Back-end em Java
 - [ ] Banco de dados MySQL
 - [ ] Integração entre front-end e back-end
+- [ ] Testes finais
 
 ---
 
@@ -142,18 +161,22 @@ O projeto está **em desenvolvimento**.
 
 Desenvolver um sistema simples e organizado que permita aos professores controlar a frequência das turmas e aos alunos acompanhar suas faltas durante o semestre.
 
-Além da aplicação prática, o projeto tem como objetivo aplicar conhecimentos de **desenvolvimento front-end, Java, banco de dados e integração entre sistemas**.
+O sistema também busca tornar esse acompanhamento mais preventivo através de alertas quando o aluno estiver próximo de atingir o limite de faltas de uma disciplina.
+
+Além da aplicação prática, o projeto tem como objetivo aplicar os conhecimentos adquiridos durante o curso em **desenvolvimento front-end, programação Java, banco de dados e integração entre sistemas**.
 
 ---
 
-## 👨‍💻 Autor
+## 👥 Equipe
 
-**Igor Diniz Lima**
-**Giovanna Carvalho dos Reis**
-**Joao Carlos Nascimento de Menezes*
-**Priscila De Assis**
+Projeto desenvolvido pelos alunos:
 
-Análise e Desenvolvimento de Sistemas
+- **Igor Diniz Lima**
+- **Giovanna Carvalho dos Reis**
+- **João Carlos Nascimento de Menezes**
+- **Priscila de Assis**
+
+🎓 **Curso:** Análise e Desenvolvimento de Sistemas
 
 ---
 
