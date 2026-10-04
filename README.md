@@ -149,6 +149,9 @@ Além da aplicação prática, o projeto tem como objetivo aplicar conhecimentos
 ## 👨‍💻 Autor
 
 **Igor Diniz Lima**
+**Giovanna Carvalho dos Reis**
+**Joao Carlos Nascimento de Menezes*
+**Priscila De Assis**
 
 Análise e Desenvolvimento de Sistemas
 
