@@ -1,0 +1,720 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   LOGIN
+========================================= */
+
+.pagina-login {
+    background-color: #dfe7f3;
+}
+
+.login-pagina {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.area-login {
+    width: 430px;
+    max-width: 100%;
+}
+
+
+/* LOGO DO LOGIN */
+
+.identidade-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+.icone-login {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #2563eb;
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.identidade-login h1 {
+    color: #1e3a8a;
+    font-size: 21px;
+}
+
+.identidade-login p {
+    color: #64748b;
+    font-size: 12px;
+}
+
+
+/* CARD DO LOGIN */
+
+.login-container {
+    background-color: white;
+
+    padding: 38px;
+
+    border-top: 5px solid #2563eb;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 18px #b8c2d1;
+}
+
+.login-tag {
+    display: inline-block;
+
+    background-color: #dbeafe;
+    color: #1d4ed8;
+
+    padding: 5px 8px;
+
+    border-radius: 5px;
+
+    margin-bottom: 10px;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.login-container h2 {
+    color: #172554;
+
+    font-size: 27px;
+
+    margin-bottom: 7px;
+}
+
+.subtitulo {
+    color: #64748b;
+
+    font-size: 13px;
+
+    margin-bottom: 28px;
+}
+
+
+/* CAMPOS */
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+
+    padding: 13px;
+
+    background-color: #f1f5f9;
+
+    border: 1px solid #b8c2d1;
+    border-radius: 7px;
+
+    font-size: 14px;
+}
+
+.campo input:focus {
+    outline: none;
+
+    background-color: white;
+
+    border-color: #2563eb;
+}
+
+
+/* BOTÃO LOGIN */
+
+.botao-login {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 5px;
+
+    background-color: #2563eb;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.botao-login:hover {
+    background-color: #1e40af;
+}
+
+
+/* CRIAR CONTA */
+
+.criar-conta {
+    background-color: #f1f5f9;
+
+    padding: 15px;
+
+    margin-top: 22px;
+
+    border-radius: 7px;
+
+    text-align: center;
+
+    font-size: 12px;
+}
+
+.criar-conta span {
+    color: #64748b;
+}
+
+.criar-conta a {
+    color: #2563eb;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.criar-conta a:hover {
+    text-decoration: underline;
+}
+
+
+/* RODAPÉ LOGIN */
+
+.login-rodape {
+    margin-top: 18px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+.login-rodape span {
+    display: inline-block;
+
+    width: 7px;
+    height: 7px;
+
+    margin-right: 5px;
+
+    background-color: #059669;
+
+    border-radius: 50%;
+}
+
+
+/* =========================================
+   PÁGINA DO PROFESSOR
+========================================= */
+
+.pagina-professor {
+    min-height: 100vh;
+
+    background-color: #eef2f7;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    width: 100%;
+
+    padding: 17px 7%;
+
+    background-color: #1e40af;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* LOGO */
+
+.logo-sistema {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.logo-icone {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #2563eb;
+
+    border-radius: 8px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo-sistema h2 {
+    font-size: 20px;
+}
+
+.logo-sistema span {
+    color: #bfdbfe;
+
+    font-size: 11px;
+}
+
+
+/* USUÁRIO */
+
+.usuario {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+.usuario-info {
+    text-align: right;
+}
+
+.usuario-tipo {
+    display: block;
+
+    color: #bfdbfe;
+
+    font-size: 10px;
+
+    margin-bottom: 3px;
+}
+
+.usuario-info strong {
+    font-size: 14px;
+}
+
+
+/* BOTÃO SAIR */
+
+.botao-sair {
+    padding: 8px 18px;
+
+    background-color: white;
+    color: #1e40af;
+
+    border: none;
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+.botao-sair:hover {
+    background-color: #dbeafe;
+}
+
+
+/* =========================================
+   CONTEÚDO DO PROFESSOR
+========================================= */
+
+.conteudo-professor {
+    width: 86%;
+    max-width: 1250px;
+
+    margin: 40px auto;
+}
+
+
+/* BANNER */
+
+.banner-professor {
+    padding: 35px;
+
+    margin-bottom: 40px;
+
+    background-color: #dbeafe;
+
+    border-radius: 14px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-tag {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #1d4ed8;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.banner-texto h1 {
+    color: #172554;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+.banner-texto p {
+    color: #475569;
+
+    font-size: 14px;
+}
+
+
+/* RESUMO */
+
+.resumo-professor {
+    background-color: white;
+
+    padding: 18px;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.numero-resumo {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #2563eb;
+    color: white;
+
+    border-radius: 8px;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.resumo-professor strong {
+    display: block;
+
+    margin-bottom: 3px;
+}
+
+.resumo-professor span {
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   DISCIPLINAS
+========================================= */
+
+.titulo-secao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.titulo-pequeno {
+    color: #2563eb;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.titulo-secao h2 {
+    margin-top: 4px;
+
+    font-size: 23px;
+}
+
+.quantidade-disciplinas {
+    background-color: white;
+
+    padding: 7px 12px;
+
+    border-radius: 15px;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+/* LISTA DE CARDS */
+
+.lista-disciplinas {
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+/* CARD */
+
+.card-disciplina {
+    flex: 1;
+
+    min-width: 270px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px #d6dbe3;
+}
+
+.card-disciplina:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ÍCONE */
+
+.icone-disciplina {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+
+/* TEXTO DO CARD */
+
+.tipo-disciplina {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.card-disciplina h3 {
+    min-height: 45px;
+
+    margin-bottom: 7px;
+
+    font-size: 18px;
+}
+
+.curso {
+    min-height: 38px;
+
+    margin-bottom: 18px;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* INFORMAÇÕES */
+
+.informacoes-disciplina {
+    display: flex;
+
+    gap: 35px;
+
+    padding: 14px 0;
+
+    margin-bottom: 20px;
+
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.informacoes-disciplina div {
+    display: flex;
+    flex-direction: column;
+}
+
+.informacoes-disciplina span {
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+.informacoes-disciplina strong {
+    margin-top: 3px;
+
+    color: #475569;
+
+    font-size: 12px;
+}
+
+
+/* BOTÕES DOS CARDS */
+
+.botao-chamada {
+    width: 100%;
+
+    padding: 11px;
+
+    border: none;
+    border-radius: 7px;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   CORES DAS DISCIPLINAS
+========================================= */
+
+
+/* BANCO DE DADOS */
+
+.card-azul {
+    border-top: 4px solid #2563eb;
+}
+
+.card-azul .icone-disciplina {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+
+.card-azul .tipo-disciplina {
+    color: #2563eb;
+}
+
+.card-azul .botao-chamada {
+    background-color: #2563eb;
+}
+
+
+/* POO */
+
+.card-roxo {
+    border-top: 4px solid #7c3aed;
+}
+
+.card-roxo .icone-disciplina {
+    background-color: #ede9fe;
+    color: #7c3aed;
+}
+
+.card-roxo .tipo-disciplina {
+    color: #7c3aed;
+}
+
+.card-roxo .botao-chamada {
+    background-color: #7c3aed;
+}
+
+
+/* ENGENHARIA DE SOFTWARE */
+
+.card-verde {
+    border-top: 4px solid #059669;
+}
+
+.card-verde .icone-disciplina {
+    background-color: #d1fae5;
+    color: #059669;
+}
+
+.card-verde .tipo-disciplina {
+    color: #059669;
+}
+
+.card-verde .botao-chamada {
+    background-color: #059669;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .banner-professor {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .resumo-professor {
+        width: 100%;
+    }
+
+    .lista-disciplinas {
+        flex-direction: column;
+    }
+
+    .usuario-info {
+        display: none;
+    }
+
+}
