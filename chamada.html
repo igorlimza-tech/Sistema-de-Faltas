@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="css/style.css">
+    <title>Chamada</title>
+</head>
+<body class="app" data-pagina="chamada">
+    <div id="cabecalho"></div>
+    <main class="conteudo" id="conteudo">
+        <a class="voltar" href="professor.html">← Voltar às disciplinas</a>
+
+        <section class="banner chamada-topo">
+            <div class="icone" id="icone"></div>
+            <div>
+                <small class="tag">CHAMADA</small>
+                <h1 id="titulo"></h1>
+                <p id="subtitulo"></p>
+            </div>
+            <label class="campo-data">Data da aula
+                <input type="date" id="data">
+            </label>
+        </section>
+
+        <div class="ferramentas">
+            <input type="search" id="busca" placeholder="Buscar aluno por nome ou RA...">
+            <button class="btn-sec" id="todos">Todos presentes</button>
+            <button class="btn-sec" id="nenhum">Todos com falta</button>
+        </div>
+        <p class="nota" id="nota"></p>
+
+        <div class="painel" id="lista"></div>
+
+        <div class="rodape-fixo">
+            <div>
+                <strong id="contador"></strong>
+                <div class="barra"><i id="prog"></i></div>
+            </div>
+            <button class="botao" id="salvar">Salvar chamada</button>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

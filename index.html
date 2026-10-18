@@ -1,126 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="css/style.css">
     <title>Sistema de Faltas</title>
-
-    <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body class="pagina-login">
-
-    <main class="login-pagina">
-
-        <div class="area-login">
-
-            <!-- IDENTIDADE DO SISTEMA -->
-            <div class="identidade-login">
-
-                <div class="icone-login">
-                    ✓
+<body class="login" data-pagina="login">
+    <aside class="lado"><h2>Chamada simples, faltas sob controle.</h2><p>Um portal para professores registrarem presença e alunos acompanharem o limite de faltas.</p><ul><li><b>✓</b>Chamada rápida em poucos cliques</li><li><b>✓</b>Faltas e limite sempre à vista</li><li><b>✓</b>Acesso separado para alunos e professores</li></ul></aside>
+    <main class="form-area">
+        <section class="cartao">
+            <div class="marca"><div class="logo-icone">✓</div><div><h1>Sistema de Faltas</h1><p>Portal Acadêmico</p></div></div>
+            <h2>Bem-vindo de volta</h2>
+            <p class="subtitulo">Entre com seu RA e senha para acessar sua conta.</p>
+            <form>
+                <div class="campo">
+                    <label for="ra">RA</label>
+                    <input type="text" id="ra" name="ra" placeholder="Digite seu RA" required>
                 </div>
-
-                <div>
-                    <h1>Sistema de Faltas</h1>
-                    <p>Portal Acadêmico</p>
-                </div>
-
-            </div>
-
-
-            <!-- CARD -->
-            <section class="login-container">
-
-                <span class="login-tag">
-                    ACESSO AO SISTEMA
-                </span>
-
-                <h2>Bem-vindo</h2>
-
-                <p class="subtitulo">
-                    Entre com seu RA e senha para acessar sua conta.
-                </p>
-
-
-                <form>
-
-                    <div class="campo">
-
-                        <label for="ra">
-                            RA
-                        </label>
-
-                        <input
-                            type="text"
-                            id="ra"
-                            name="ra"
-                            placeholder="Digite seu RA"
-                            required
-                        >
-
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <div class="senha-box">
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                        <button type="button" class="ver-senha" data-alvo="senha">Mostrar</button>
                     </div>
-
-
-                    <div class="campo">
-
-                        <label for="senha">
-                            Senha
-                        </label>
-
-                        <input
-                            type="password"
-                            id="senha"
-                            name="senha"
-                            placeholder="Digite sua senha"
-                            required
-                        >
-
-                    </div>
-
-
-                    <button
-                        class="botao-login"
-                        type="submit"
-                    >
-                        Entrar
-                        <span>→</span>
-                    </button>
-
-                </form>
-
-
-                <!-- CADASTRO -->
-                <div class="criar-conta">
-
-                    <span>
-                        Ainda não possui uma conta?
-                    </span>
-
-                    <a href="cadastro.html">
-                        Criar conta
-                    </a>
-
                 </div>
-
-            </section>
-
-
-            <!-- RODAPÉ -->
-            <div class="login-rodape">
-
-                <span></span>
-
-                Acesso para alunos e professores
-
-            </div>
-
-        </div>
-
+                <button class="botao" type="submit">Entrar →</button>
+            </form>
+            <div class="criar-conta">Ainda não possui uma conta? <a href="cadastro.html">Criar conta</a></div>
+            <p class="dica">Para testar: professor prof1 / 123 &nbsp;·&nbsp; aluno 1001 / 123</p>
+        </section>
     </main>
-
+    <script src="js/app.js"></script>
 </body>
-
 </html>
